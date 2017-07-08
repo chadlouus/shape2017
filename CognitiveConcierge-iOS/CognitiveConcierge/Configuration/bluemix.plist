@@ -5,7 +5,7 @@
 	<key>appRouteLocal</key>
 	<string>http://localhost:8080</string>
 	<key>appRouteRemote</key>
-	<string>https://cognitiveconcierge-20170606190241365-noninvincible-formularisation.mybluemix.net</string>
+	<string>https://cognitiveconcierge-20170708144551750-unlike-frogspawn.mybluemix.net</string>
 	<key>bluemixAppGUID</key>
 	<string>appGuid</string>
 	<key>bluemixAppRegion</key>

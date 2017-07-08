@@ -1,727 +1,1999 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		39A907EB378D2C4DA13F61F7 /* Pods_CognitiveConcierge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87BB7C94DAD466B58261E3B8 /* Pods_CognitiveConcierge.framework */; };
-		7ADBC9D51DDD591000837023 /* ConversationV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ADBC9D11DDD591000837023 /* ConversationV1.framework */; };
-		7ADBC9D61DDD591000837023 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ADBC9D21DDD591000837023 /* RestKit.framework */; };
-		7ADBC9D71DDD591000837023 /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ADBC9D31DDD591000837023 /* SpeechToTextV1.framework */; };
-		7ADBC9D81DDD591000837023 /* TextToSpeechV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ADBC9D41DDD591000837023 /* TextToSpeechV1.framework */; };
-		7F4F5BBF1D6E1B4400CF0A13 /* CognitiveConcierge.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F4F5BBE1D6E1B4400CF0A13 /* CognitiveConcierge.plist */; };
-		7F642A7E1D610919007A0F53 /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F642A7D1D610919007A0F53 /* Conversation.swift */; };
-		7F6FAE771D6A75F700BE7829 /* HorizontalOnePartStackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F6FAE761D6A75F700BE7829 /* HorizontalOnePartStackView.xib */; };
-		7F6FAE791D6A760A00BE7829 /* HorizontalOnePartStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6FAE781D6A760A00BE7829 /* HorizontalOnePartStackView.swift */; };
-		7F6FAE9C1D6B5E5800BE7829 /* RecommendedRestaurantDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6FAE9B1D6B5E5800BE7829 /* RecommendedRestaurantDetailView.swift */; };
-		7F6FAE9E1D6B5E6800BE7829 /* RecommendedRestaurantDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F6FAE9D1D6B5E6800BE7829 /* RecommendedRestaurantDetailView.xib */; };
-		7F8F98161D61036F0061E220 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8F98151D61036F0061E220 /* MessagesViewController.swift */; };
-		7F9F773E1D649FA600B9114B /* restaurantReviews.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F9F773D1D649FA600B9114B /* restaurantReviews.json */; };
-		7F9F77401D64A3A500B9114B /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9F773F1D64A3A500B9114B /* Restaurant.swift */; };
-		7F9F77431D64CB5F00B9114B /* reviews.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7F9F77411D64B6AD00B9114B /* reviews.txt */; };
-		7F9F77451D64E09500B9114B /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9F77441D64E09500B9114B /* RestaurantViewController.swift */; };
-		7F9F774A1D664D2500B9114B /* RecommendedRestaurantTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F9F77491D664D2500B9114B /* RecommendedRestaurantTableViewCell.xib */; };
-		7F9F774C1D664D4B00B9114B /* RecommendedRestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9F774B1D664D4B00B9114B /* RecommendedRestaurantTableViewCell.swift */; };
-		7F9F77521D6652F200B9114B /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9F77511D6652F200B9114B /* UIColorExtension.swift */; };
-		7F9F77561D6655B100B9114B /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9F77551D6655B100B9114B /* UIFontExtension.swift */; };
-		7FA7F8901D60CEA70039792A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA7F88F1D60CEA70039792A /* AppDelegate.swift */; };
-		7FA7F8951D60CEA70039792A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FA7F8931D60CEA70039792A /* Main.storyboard */; };
-		7FA7F8971D60CEA70039792A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FA7F8961D60CEA70039792A /* Assets.xcassets */; };
-		7FA7F89A1D60CEA70039792A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FA7F8981D60CEA70039792A /* LaunchScreen.storyboard */; };
-		7FEAA42F1D8356C100E4839C /* WatsonOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEAA42E1D8356C100E4839C /* WatsonOverlay.swift */; };
-		7FEAA4311D835AB300E4839C /* WatsonOverlay.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FEAA4301D835AB300E4839C /* WatsonOverlay.xib */; };
-		972AB5611DA5E17900985506 /* BluemixConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972AB5601DA5E17900985506 /* BluemixConfiguration.swift */; };
-		972AB5631DA5E6F600985506 /* bluemix.plist in Resources */ = {isa = PBXBuildFile; fileRef = 972AB5621DA5E6F600985506 /* bluemix.plist */; };
-		CE1456181DAE8CEB00A7E744 /* DecisionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1456161DAE8CEB00A7E744 /* DecisionsView.swift */; };
-		CE1456191DAE8CEB00A7E744 /* DecisionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1456171DAE8CEB00A7E744 /* DecisionsView.xib */; };
-		CE1C1B621D79C07D00F1C4D2 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C1B611D79C07D00F1C4D2 /* UIViewExtensions.swift */; };
-		CE1C1B6F1D79C5ED00F1C4D2 /* MoreIconBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C1B6E1D79C5ED00F1C4D2 /* MoreIconBarButtonItem.swift */; };
-		CE1C1B711D79C6C300F1C4D2 /* ProfileBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C1B701D79C6C300F1C4D2 /* ProfileBarButtonItem.swift */; };
-		CE1C1B721D79E40F00F1C4D2 /* SFNSDisplay.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE1C1B601D79167900F1C4D2 /* SFNSDisplay.ttf */; };
-		CE1C1B761D79F48100F1C4D2 /* UILabelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C1B751D79F48100F1C4D2 /* UILabelExtensions.swift */; };
-		CE5818811D6B7703006D3D43 /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5818801D6B7703006D3D43 /* RestaurantDetailViewController.swift */; };
-		CE5818831D6BA007006D3D43 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5818821D6BA007006D3D43 /* Utils.swift */; };
-		CE58188B1D74828D006D3D43 /* EntertainmentOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58188A1D74828D006D3D43 /* EntertainmentOptionsViewController.swift */; };
-		CE60F2C81D78AC5000F8DBF1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE60F2C71D78AC5000F8DBF1 /* User.swift */; };
-		CE60F2CB1D78BEC800F8DBF1 /* EntertainmentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE60F2C91D78BEC800F8DBF1 /* EntertainmentCollectionViewCell.swift */; };
-		CE60F2CC1D78BEC800F8DBF1 /* EntertainmentCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE60F2CA1D78BEC800F8DBF1 /* EntertainmentCollectionViewCell.xib */; };
-		CE68A5BA1D89E57F00CC0E4E /* SFNSDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE68A5B91D89E57F00CC0E4E /* SFNSDisplay-Bold.ttf */; };
-		CE72A11E1DA2AF7700D6552E /* LasVegasReviews.json in Resources */ = {isa = PBXBuildFile; fileRef = CE72A11D1DA2AF7700D6552E /* LasVegasReviews.json */; };
-		CE72A1201DA30C9200D6552E /* anniversary.json in Resources */ = {isa = PBXBuildFile; fileRef = CE72A11F1DA30C9200D6552E /* anniversary.json */; };
-		CE72A1221DA30C9900D6552E /* birthday.json in Resources */ = {isa = PBXBuildFile; fileRef = CE72A1211DA30C9900D6552E /* birthday.json */; };
-		CE72A1241DA30C9E00D6552E /* casual.json in Resources */ = {isa = PBXBuildFile; fileRef = CE72A1231DA30C9E00D6552E /* casual.json */; };
-		CE79F37D1D81161800550967 /* WhitePathIconBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE79F37C1D81161800550967 /* WhitePathIconBarButtonItem.swift */; };
-		CE79F3831D8304DE00550967 /* Watson-blue.gif in Resources */ = {isa = PBXBuildFile; fileRef = CE79F3821D8304DE00550967 /* Watson-blue.gif */; };
-		CEA4552F1D80691800F531C0 /* PathIconBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA4552E1D80691800F531C0 /* PathIconBarButtonItem.swift */; };
-		CEC1B4C11DABD473004F211A /* MessagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1B4C01DABD473004F211A /* MessagesViewModel.swift */; };
-		CED9E2A01D74BCF000AADF4D /* EndpointManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED9E29F1D74BCF000AADF4D /* EndpointManager.swift */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXFileReference section */
-		093B8C3845F89B67402347B1 /* Pods-CognitiveConcierge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CognitiveConcierge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CognitiveConcierge/Pods-CognitiveConcierge.debug.xcconfig"; sourceTree = "<group>"; };
-		7ADBC9D11DDD591000837023 /* ConversationV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ConversationV1.framework; path = Carthage/Build/iOS/ConversationV1.framework; sourceTree = "<group>"; };
-		7ADBC9D21DDD591000837023 /* RestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RestKit.framework; path = Carthage/Build/iOS/RestKit.framework; sourceTree = "<group>"; };
-		7ADBC9D31DDD591000837023 /* SpeechToTextV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpeechToTextV1.framework; path = Carthage/Build/iOS/SpeechToTextV1.framework; sourceTree = "<group>"; };
-		7ADBC9D41DDD591000837023 /* TextToSpeechV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TextToSpeechV1.framework; path = Carthage/Build/iOS/TextToSpeechV1.framework; sourceTree = "<group>"; };
-		7F4F5BBE1D6E1B4400CF0A13 /* CognitiveConcierge.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CognitiveConcierge.plist; sourceTree = "<group>"; };
-		7F642A7D1D610919007A0F53 /* Conversation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
-		7F6FAE761D6A75F700BE7829 /* HorizontalOnePartStackView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HorizontalOnePartStackView.xib; sourceTree = "<group>"; };
-		7F6FAE781D6A760A00BE7829 /* HorizontalOnePartStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalOnePartStackView.swift; sourceTree = "<group>"; };
-		7F6FAE9B1D6B5E5800BE7829 /* RecommendedRestaurantDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendedRestaurantDetailView.swift; sourceTree = "<group>"; };
-		7F6FAE9D1D6B5E6800BE7829 /* RecommendedRestaurantDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendedRestaurantDetailView.xib; sourceTree = "<group>"; };
-		7F8F98151D61036F0061E220 /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
-		7F9F773D1D649FA600B9114B /* restaurantReviews.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = restaurantReviews.json; sourceTree = "<group>"; };
-		7F9F773F1D64A3A500B9114B /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
-		7F9F77411D64B6AD00B9114B /* reviews.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = reviews.txt; sourceTree = "<group>"; };
-		7F9F77441D64E09500B9114B /* RestaurantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
-		7F9F77491D664D2500B9114B /* RecommendedRestaurantTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendedRestaurantTableViewCell.xib; sourceTree = "<group>"; };
-		7F9F774B1D664D4B00B9114B /* RecommendedRestaurantTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendedRestaurantTableViewCell.swift; sourceTree = "<group>"; };
-		7F9F77511D6652F200B9114B /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
-		7F9F77551D6655B100B9114B /* UIFontExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
-		7FA7F88C1D60CEA70039792A /* CognitiveConcierge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CognitiveConcierge.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7FA7F88F1D60CEA70039792A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7FA7F8941D60CEA70039792A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7FA7F8961D60CEA70039792A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7FA7F8991D60CEA70039792A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7FA7F89B1D60CEA70039792A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7FEAA42E1D8356C100E4839C /* WatsonOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatsonOverlay.swift; sourceTree = "<group>"; };
-		7FEAA4301D835AB300E4839C /* WatsonOverlay.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WatsonOverlay.xib; sourceTree = "<group>"; };
-		87BB7C94DAD466B58261E3B8 /* Pods_CognitiveConcierge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CognitiveConcierge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		972AB5601DA5E17900985506 /* BluemixConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluemixConfiguration.swift; sourceTree = "<group>"; };
-		972AB5621DA5E6F600985506 /* bluemix.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = bluemix.plist; path = Configuration/bluemix.plist; sourceTree = "<group>"; };
-		CE1456161DAE8CEB00A7E744 /* DecisionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecisionsView.swift; sourceTree = "<group>"; };
-		CE1456171DAE8CEB00A7E744 /* DecisionsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DecisionsView.xib; sourceTree = "<group>"; };
-		CE1C1B601D79167900F1C4D2 /* SFNSDisplay.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFNSDisplay.ttf; sourceTree = "<group>"; };
-		CE1C1B611D79C07D00F1C4D2 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
-		CE1C1B6E1D79C5ED00F1C4D2 /* MoreIconBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreIconBarButtonItem.swift; sourceTree = "<group>"; };
-		CE1C1B701D79C6C300F1C4D2 /* ProfileBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileBarButtonItem.swift; sourceTree = "<group>"; };
-		CE1C1B751D79F48100F1C4D2 /* UILabelExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtensions.swift; sourceTree = "<group>"; };
-		CE5818801D6B7703006D3D43 /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
-		CE5818821D6BA007006D3D43 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		CE58188A1D74828D006D3D43 /* EntertainmentOptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntertainmentOptionsViewController.swift; sourceTree = "<group>"; };
-		CE60F2C71D78AC5000F8DBF1 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		CE60F2C91D78BEC800F8DBF1 /* EntertainmentCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntertainmentCollectionViewCell.swift; sourceTree = "<group>"; };
-		CE60F2CA1D78BEC800F8DBF1 /* EntertainmentCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EntertainmentCollectionViewCell.xib; sourceTree = "<group>"; };
-		CE68A5B91D89E57F00CC0E4E /* SFNSDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFNSDisplay-Bold.ttf"; sourceTree = "<group>"; };
-		CE72A11D1DA2AF7700D6552E /* LasVegasReviews.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LasVegasReviews.json; sourceTree = "<group>"; };
-		CE72A11F1DA30C9200D6552E /* anniversary.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = anniversary.json; sourceTree = "<group>"; };
-		CE72A1211DA30C9900D6552E /* birthday.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = birthday.json; sourceTree = "<group>"; };
-		CE72A1231DA30C9E00D6552E /* casual.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = casual.json; sourceTree = "<group>"; };
-		CE79F37C1D81161800550967 /* WhitePathIconBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhitePathIconBarButtonItem.swift; sourceTree = "<group>"; };
-		CE79F3821D8304DE00550967 /* Watson-blue.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "Watson-blue.gif"; path = "../Watson-blue.gif"; sourceTree = "<group>"; };
-		CE79F3841D830E0E00550967 /* WatsonOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatsonOverlay.swift; sourceTree = "<group>"; };
-		CEA4552E1D80691800F531C0 /* PathIconBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathIconBarButtonItem.swift; sourceTree = "<group>"; };
-		CEC1B4C01DABD473004F211A /* MessagesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewModel.swift; sourceTree = "<group>"; };
-		CED9E29F1D74BCF000AADF4D /* EndpointManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointManager.swift; sourceTree = "<group>"; };
-		D208A19ADBFAA42F104EF383 /* Pods-CognitiveConcierge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CognitiveConcierge.release.xcconfig"; path = "Pods/Target Support Files/Pods-CognitiveConcierge/Pods-CognitiveConcierge.release.xcconfig"; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		7FA7F8891D60CEA70039792A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7ADBC9D51DDD591000837023 /* ConversationV1.framework in Frameworks */,
-				7ADBC9D61DDD591000837023 /* RestKit.framework in Frameworks */,
-				7ADBC9D71DDD591000837023 /* SpeechToTextV1.framework in Frameworks */,
-				7ADBC9D81DDD591000837023 /* TextToSpeechV1.framework in Frameworks */,
-				39A907EB378D2C4DA13F61F7 /* Pods_CognitiveConcierge.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		49A1A28CFD61AC8AEF74DEE3 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				093B8C3845F89B67402347B1 /* Pods-CognitiveConcierge.debug.xcconfig */,
-				D208A19ADBFAA42F104EF383 /* Pods-CognitiveConcierge.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		7F6FAE7A1D6B4A0A00BE7829 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				CE79F3821D8304DE00550967 /* Watson-blue.gif */,
-				7F6FAE7B1D6B4A1E00BE7829 /* Fonts */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		7F6FAE7B1D6B4A1E00BE7829 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				7F6FAE7C1D6B4A2400BE7829 /* OpenSans */,
-			);
-			name = Fonts;
-			sourceTree = "<group>";
-		};
-		7F6FAE7C1D6B4A2400BE7829 /* OpenSans */ = {
-			isa = PBXGroup;
-			children = (
-				CE68A5B91D89E57F00CC0E4E /* SFNSDisplay-Bold.ttf */,
-				CE1C1B601D79167900F1C4D2 /* SFNSDisplay.ttf */,
-			);
-			name = OpenSans;
-			sourceTree = "<group>";
-		};
-		7F9F773B1D6381EE00B9114B /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				7F642A7D1D610919007A0F53 /* Conversation.swift */,
-				7F9F773F1D64A3A500B9114B /* Restaurant.swift */,
-				7F9F77411D64B6AD00B9114B /* reviews.txt */,
-				CE60F2C71D78AC5000F8DBF1 /* User.swift */,
-				CE79F3841D830E0E00550967 /* WatsonOverlay.swift */,
-			);
-			name = Models;
-			sourceTree = "<group>";
-		};
-		7F9F773C1D6381F900B9114B /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				CED91C401DAEB06A0026A4D7 /* MessagesViewController */,
-				7FA7F88F1D60CEA70039792A /* AppDelegate.swift */,
-				CE58188A1D74828D006D3D43 /* EntertainmentOptionsViewController.swift */,
-				7F9F77441D64E09500B9114B /* RestaurantViewController.swift */,
-				CE68A5B71D89E39E00CC0E4E /* RestaurantDetailViewController */,
-			);
-			name = Controllers;
-			sourceTree = "<group>";
-		};
-		7F9F77481D664C8900B9114B /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				7F6FAE781D6A760A00BE7829 /* HorizontalOnePartStackView.swift */,
-				7F6FAE761D6A75F700BE7829 /* HorizontalOnePartStackView.xib */,
-				7F9F774B1D664D4B00B9114B /* RecommendedRestaurantTableViewCell.swift */,
-				7F9F77491D664D2500B9114B /* RecommendedRestaurantTableViewCell.xib */,
-				7FA7F8931D60CEA70039792A /* Main.storyboard */,
-				7FEAA4301D835AB300E4839C /* WatsonOverlay.xib */,
-				7FEAA42E1D8356C100E4839C /* WatsonOverlay.swift */,
-				CE60F2C91D78BEC800F8DBF1 /* EntertainmentCollectionViewCell.swift */,
-				CE60F2CA1D78BEC800F8DBF1 /* EntertainmentCollectionViewCell.xib */,
-			);
-			name = Views;
-			sourceTree = "<group>";
-		};
-		7F9F77501D6652D600B9114B /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				CE1C1B611D79C07D00F1C4D2 /* UIViewExtensions.swift */,
-				7F9F77511D6652F200B9114B /* UIColorExtension.swift */,
-				7F9F77551D6655B100B9114B /* UIFontExtension.swift */,
-				CE1C1B751D79F48100F1C4D2 /* UILabelExtensions.swift */,
-			);
-			name = Extensions;
-			sourceTree = "<group>";
-		};
-		7FA7F8831D60CEA70039792A = {
-			isa = PBXGroup;
-			children = (
-				7FA7F88E1D60CEA70039792A /* CognitiveConcierge */,
-				7FA7F88D1D60CEA70039792A /* Products */,
-				49A1A28CFD61AC8AEF74DEE3 /* Pods */,
-				D58AA635FF82F295E566095A /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		7FA7F88D1D60CEA70039792A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				7FA7F88C1D60CEA70039792A /* CognitiveConcierge.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		7FA7F88E1D60CEA70039792A /* CognitiveConcierge */ = {
-			isa = PBXGroup;
-			children = (
-				CE1C1B671D79C45A00F1C4D2 /* Navigation */,
-				CE1C1B661D79C30700F1C4D2 /* Utils */,
-				CED9E29C1D749C5C00AADF4D /* DataManagers */,
-				7F9F773C1D6381F900B9114B /* Controllers */,
-				CE72A1251DA30CF100D6552E /* Mock Data */,
-				7F9F773B1D6381EE00B9114B /* Models */,
-				7F9F77481D664C8900B9114B /* Views */,
-				7F9F77501D6652D600B9114B /* Extensions */,
-				7F6FAE7A1D6B4A0A00BE7829 /* Resources */,
-				7FA7F8961D60CEA70039792A /* Assets.xcassets */,
-				7FA7F8981D60CEA70039792A /* LaunchScreen.storyboard */,
-				7FA7F89B1D60CEA70039792A /* Info.plist */,
-				972AB5621DA5E6F600985506 /* bluemix.plist */,
-				7F4F5BBE1D6E1B4400CF0A13 /* CognitiveConcierge.plist */,
-			);
-			path = CognitiveConcierge;
-			sourceTree = "<group>";
-		};
-		CE1C1B661D79C30700F1C4D2 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				CE5818821D6BA007006D3D43 /* Utils.swift */,
-			);
-			name = Utils;
-			sourceTree = "<group>";
-		};
-		CE1C1B671D79C45A00F1C4D2 /* Navigation */ = {
-			isa = PBXGroup;
-			children = (
-				CE1C1B6E1D79C5ED00F1C4D2 /* MoreIconBarButtonItem.swift */,
-				CEA4552E1D80691800F531C0 /* PathIconBarButtonItem.swift */,
-				CE79F37C1D81161800550967 /* WhitePathIconBarButtonItem.swift */,
-				CE1C1B701D79C6C300F1C4D2 /* ProfileBarButtonItem.swift */,
-			);
-			name = Navigation;
-			sourceTree = "<group>";
-		};
-		CE68A5B71D89E39E00CC0E4E /* RestaurantDetailViewController */ = {
-			isa = PBXGroup;
-			children = (
-				CE68A5B81D89E3AA00CC0E4E /* Subviews */,
-				CE5818801D6B7703006D3D43 /* RestaurantDetailViewController.swift */,
-			);
-			name = RestaurantDetailViewController;
-			sourceTree = "<group>";
-		};
-		CE68A5B81D89E3AA00CC0E4E /* Subviews */ = {
-			isa = PBXGroup;
-			children = (
-				7F6FAE9D1D6B5E6800BE7829 /* RecommendedRestaurantDetailView.xib */,
-				7F6FAE9B1D6B5E5800BE7829 /* RecommendedRestaurantDetailView.swift */,
-			);
-			name = Subviews;
-			sourceTree = "<group>";
-		};
-		CE72A1251DA30CF100D6552E /* Mock Data */ = {
-			isa = PBXGroup;
-			children = (
-				CE72A11F1DA30C9200D6552E /* anniversary.json */,
-				CE72A1211DA30C9900D6552E /* birthday.json */,
-				CE72A1231DA30C9E00D6552E /* casual.json */,
-				CE72A11D1DA2AF7700D6552E /* LasVegasReviews.json */,
-				7F9F773D1D649FA600B9114B /* restaurantReviews.json */,
-			);
-			name = "Mock Data";
-			sourceTree = "<group>";
-		};
-		CED91C401DAEB06A0026A4D7 /* MessagesViewController */ = {
-			isa = PBXGroup;
-			children = (
-				CED91C411DAEB0950026A4D7 /* Subviews */,
-				CEC1B4C01DABD473004F211A /* MessagesViewModel.swift */,
-				7F8F98151D61036F0061E220 /* MessagesViewController.swift */,
-			);
-			name = MessagesViewController;
-			sourceTree = "<group>";
-		};
-		CED91C411DAEB0950026A4D7 /* Subviews */ = {
-			isa = PBXGroup;
-			children = (
-				CE1456171DAE8CEB00A7E744 /* DecisionsView.xib */,
-				CE1456161DAE8CEB00A7E744 /* DecisionsView.swift */,
-			);
-			name = Subviews;
-			sourceTree = "<group>";
-		};
-		CED9E29C1D749C5C00AADF4D /* DataManagers */ = {
-			isa = PBXGroup;
-			children = (
-				CED9E29F1D74BCF000AADF4D /* EndpointManager.swift */,
-				972AB5601DA5E17900985506 /* BluemixConfiguration.swift */,
-			);
-			name = DataManagers;
-			sourceTree = "<group>";
-		};
-		D58AA635FF82F295E566095A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7ADBC9D11DDD591000837023 /* ConversationV1.framework */,
-				7ADBC9D21DDD591000837023 /* RestKit.framework */,
-				7ADBC9D31DDD591000837023 /* SpeechToTextV1.framework */,
-				7ADBC9D41DDD591000837023 /* TextToSpeechV1.framework */,
-				87BB7C94DAD466B58261E3B8 /* Pods_CognitiveConcierge.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		7FA7F88B1D60CEA70039792A /* CognitiveConcierge */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7FA7F89E1D60CEA70039792A /* Build configuration list for PBXNativeTarget "CognitiveConcierge" */;
-			buildPhases = (
-				DCF64E1E0842AB98FA211060 /* [CP] Check Pods Manifest.lock */,
-				7FA7F8881D60CEA70039792A /* Sources */,
-				7FA7F8891D60CEA70039792A /* Frameworks */,
-				7FA7F88A1D60CEA70039792A /* Resources */,
-				AC602C9C2CC8488428B28876 /* [CP] Embed Pods Frameworks */,
-				AC03295D12905A521ECC3F5F /* [CP] Copy Pods Resources */,
-				7ADBC9D91DDD591700837023 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = CognitiveConcierge;
-			productName = WatsonRecommendations;
-			productReference = 7FA7F88C1D60CEA70039792A /* CognitiveConcierge.app */;
-			productType = "com.apple.product-type.application";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		7FA7F8841D60CEA70039792A /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0820;
-				ORGANIZATIONNAME = IBM;
-				TargetAttributes = {
-					7FA7F88B1D60CEA70039792A = {
-						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 0800;
-					};
-				};
-			};
-			buildConfigurationList = 7FA7F8871D60CEA70039792A /* Build configuration list for PBXProject "CognitiveConcierge" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = 7FA7F8831D60CEA70039792A;
-			productRefGroup = 7FA7F88D1D60CEA70039792A /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				7FA7F88B1D60CEA70039792A /* CognitiveConcierge */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		7FA7F88A1D60CEA70039792A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CE68A5BA1D89E57F00CC0E4E /* SFNSDisplay-Bold.ttf in Resources */,
-				CE72A1221DA30C9900D6552E /* birthday.json in Resources */,
-				CE79F3831D8304DE00550967 /* Watson-blue.gif in Resources */,
-				972AB5631DA5E6F600985506 /* bluemix.plist in Resources */,
-				7F9F77431D64CB5F00B9114B /* reviews.txt in Resources */,
-				CE1C1B721D79E40F00F1C4D2 /* SFNSDisplay.ttf in Resources */,
-				7F9F773E1D649FA600B9114B /* restaurantReviews.json in Resources */,
-				7F6FAE9E1D6B5E6800BE7829 /* RecommendedRestaurantDetailView.xib in Resources */,
-				7FA7F89A1D60CEA70039792A /* LaunchScreen.storyboard in Resources */,
-				7FA7F8971D60CEA70039792A /* Assets.xcassets in Resources */,
-				7FEAA4311D835AB300E4839C /* WatsonOverlay.xib in Resources */,
-				7F9F774A1D664D2500B9114B /* RecommendedRestaurantTableViewCell.xib in Resources */,
-				CE72A1241DA30C9E00D6552E /* casual.json in Resources */,
-				CE72A11E1DA2AF7700D6552E /* LasVegasReviews.json in Resources */,
-				CE72A1201DA30C9200D6552E /* anniversary.json in Resources */,
-				7FA7F8951D60CEA70039792A /* Main.storyboard in Resources */,
-				CE1456191DAE8CEB00A7E744 /* DecisionsView.xib in Resources */,
-				7F4F5BBF1D6E1B4400CF0A13 /* CognitiveConcierge.plist in Resources */,
-				7F6FAE771D6A75F700BE7829 /* HorizontalOnePartStackView.xib in Resources */,
-				CE60F2CC1D78BEC800F8DBF1 /* EntertainmentCollectionViewCell.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		7ADBC9D91DDD591700837023 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/TextToSpeechV1.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/ConversationV1.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/SpeechToTextV1.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RestKit.framework",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-		AC03295D12905A521ECC3F5F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CognitiveConcierge/Pods-CognitiveConcierge-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AC602C9C2CC8488428B28876 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CognitiveConcierge/Pods-CognitiveConcierge-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DCF64E1E0842AB98FA211060 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		7FA7F8881D60CEA70039792A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CE1C1B6F1D79C5ED00F1C4D2 /* MoreIconBarButtonItem.swift in Sources */,
-				972AB5611DA5E17900985506 /* BluemixConfiguration.swift in Sources */,
-				CE79F37D1D81161800550967 /* WhitePathIconBarButtonItem.swift in Sources */,
-				CE1C1B621D79C07D00F1C4D2 /* UIViewExtensions.swift in Sources */,
-				7F9F77401D64A3A500B9114B /* Restaurant.swift in Sources */,
-				7F9F77451D64E09500B9114B /* RestaurantViewController.swift in Sources */,
-				7F642A7E1D610919007A0F53 /* Conversation.swift in Sources */,
-				CE5818831D6BA007006D3D43 /* Utils.swift in Sources */,
-				CE1C1B761D79F48100F1C4D2 /* UILabelExtensions.swift in Sources */,
-				7F8F98161D61036F0061E220 /* MessagesViewController.swift in Sources */,
-				7FEAA42F1D8356C100E4839C /* WatsonOverlay.swift in Sources */,
-				7F6FAE9C1D6B5E5800BE7829 /* RecommendedRestaurantDetailView.swift in Sources */,
-				7F6FAE791D6A760A00BE7829 /* HorizontalOnePartStackView.swift in Sources */,
-				CE60F2CB1D78BEC800F8DBF1 /* EntertainmentCollectionViewCell.swift in Sources */,
-				CEA4552F1D80691800F531C0 /* PathIconBarButtonItem.swift in Sources */,
-				7F9F77521D6652F200B9114B /* UIColorExtension.swift in Sources */,
-				CEC1B4C11DABD473004F211A /* MessagesViewModel.swift in Sources */,
-				CE5818811D6B7703006D3D43 /* RestaurantDetailViewController.swift in Sources */,
-				7FA7F8901D60CEA70039792A /* AppDelegate.swift in Sources */,
-				CED9E2A01D74BCF000AADF4D /* EndpointManager.swift in Sources */,
-				CE58188B1D74828D006D3D43 /* EntertainmentOptionsViewController.swift in Sources */,
-				7F9F774C1D664D4B00B9114B /* RecommendedRestaurantTableViewCell.swift in Sources */,
-				CE1C1B711D79C6C300F1C4D2 /* ProfileBarButtonItem.swift in Sources */,
-				7F9F77561D6655B100B9114B /* UIFontExtension.swift in Sources */,
-				CE60F2C81D78AC5000F8DBF1 /* User.swift in Sources */,
-				CE1456181DAE8CEB00A7E744 /* DecisionsView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		7FA7F8931D60CEA70039792A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7FA7F8941D60CEA70039792A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		7FA7F8981D60CEA70039792A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7FA7F8991D60CEA70039792A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		7FA7F89C1D60CEA70039792A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 2.3;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		7FA7F89D1D60CEA70039792A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 2.3;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		7FA7F89F1D60CEA70039792A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 093B8C3845F89B67402347B1 /* Pods-CognitiveConcierge.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/Pods/GooglePlaces/Frameworks/**",
-				);
-				INFOPLIST_FILE = CognitiveConcierge/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.CognitiveConcierge;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				SWIFT_VERSION = 3.0.1;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		7FA7F8A01D60CEA70039792A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D208A19ADBFAA42F104EF383 /* Pods-CognitiveConcierge.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/Pods/GooglePlaces/Frameworks",
-				);
-				INFOPLIST_FILE = CognitiveConcierge/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.CognitiveConcierge;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				SWIFT_VERSION = 3.0.1;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		7FA7F8871D60CEA70039792A /* Build configuration list for PBXProject "CognitiveConcierge" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7FA7F89C1D60CEA70039792A /* Debug */,
-				7FA7F89D1D60CEA70039792A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7FA7F89E1D60CEA70039792A /* Build configuration list for PBXNativeTarget "CognitiveConcierge" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7FA7F89F1D60CEA70039792A /* Debug */,
-				7FA7F8A01D60CEA70039792A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 7FA7F8841D60CEA70039792A /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>093B8C3845F89B67402347B1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-CognitiveConcierge.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-CognitiveConcierge/Pods-CognitiveConcierge.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>39A907EB378D2C4DA13F61F7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>87BB7C94DAD466B58261E3B8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>49A1A28CFD61AC8AEF74DEE3</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>093B8C3845F89B67402347B1</string>
+				<string>D208A19ADBFAA42F104EF383</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7ADBC9D11DDD591000837023</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>ConversationV1.framework</string>
+			<key>path</key>
+			<string>Carthage/Build/iOS/ConversationV1.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7ADBC9D21DDD591000837023</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>RestKit.framework</string>
+			<key>path</key>
+			<string>Carthage/Build/iOS/RestKit.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7ADBC9D31DDD591000837023</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>SpeechToTextV1.framework</string>
+			<key>path</key>
+			<string>Carthage/Build/iOS/SpeechToTextV1.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7ADBC9D41DDD591000837023</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>TextToSpeechV1.framework</string>
+			<key>path</key>
+			<string>Carthage/Build/iOS/TextToSpeechV1.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7ADBC9D51DDD591000837023</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7ADBC9D11DDD591000837023</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7ADBC9D61DDD591000837023</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7ADBC9D21DDD591000837023</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7ADBC9D71DDD591000837023</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7ADBC9D31DDD591000837023</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7ADBC9D81DDD591000837023</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7ADBC9D41DDD591000837023</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7ADBC9D91DDD591700837023</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array>
+				<string>$(SRCROOT)/Carthage/Build/iOS/TextToSpeechV1.framework</string>
+				<string>$(SRCROOT)/Carthage/Build/iOS/ConversationV1.framework</string>
+				<string>$(SRCROOT)/Carthage/Build/iOS/SpeechToTextV1.framework</string>
+				<string>$(SRCROOT)/Carthage/Build/iOS/RestKit.framework</string>
+			</array>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>/usr/local/bin/carthage copy-frameworks</string>
+		</dict>
+		<key>7F4F5BBE1D6E1B4400CF0A13</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>CognitiveConcierge.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7F4F5BBF1D6E1B4400CF0A13</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7F4F5BBE1D6E1B4400CF0A13</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7F642A7D1D610919007A0F53</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>Conversation.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7F642A7E1D610919007A0F53</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7F642A7D1D610919007A0F53</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7F6FAE761D6A75F700BE7829</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>HorizontalOnePartStackView.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7F6FAE771D6A75F700BE7829</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7F6FAE761D6A75F700BE7829</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7F6FAE781D6A760A00BE7829</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>HorizontalOnePartStackView.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7F6FAE791D6A760A00BE7829</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7F6FAE781D6A760A00BE7829</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7F6FAE7A1D6B4A0A00BE7829</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CE79F3821D8304DE00550967</string>
+				<string>7F6FAE7B1D6B4A1E00BE7829</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Resources</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7F6FAE7B1D6B4A1E00BE7829</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7F6FAE7C1D6B4A2400BE7829</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Fonts</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7F6FAE7C1D6B4A2400BE7829</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CE68A5B91D89E57F00CC0E4E</string>
+				<string>CE1C1B601D79167900F1C4D2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>OpenSans</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7F6FAE9B1D6B5E5800BE7829</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>RecommendedRestaurantDetailView.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7F6FAE9C1D6B5E5800BE7829</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7F6FAE9B1D6B5E5800BE7829</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7F6FAE9D1D6B5E6800BE7829</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>RecommendedRestaurantDetailView.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7F6FAE9E1D6B5E6800BE7829</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7F6FAE9D1D6B5E6800BE7829</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7F8F98151D61036F0061E220</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>MessagesViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7F8F98161D61036F0061E220</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7F8F98151D61036F0061E220</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7F9F773B1D6381EE00B9114B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7F642A7D1D610919007A0F53</string>
+				<string>7F9F773F1D64A3A500B9114B</string>
+				<string>7F9F77411D64B6AD00B9114B</string>
+				<string>CE60F2C71D78AC5000F8DBF1</string>
+				<string>CE79F3841D830E0E00550967</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Models</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7F9F773C1D6381F900B9114B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CED91C401DAEB06A0026A4D7</string>
+				<string>7FA7F88F1D60CEA70039792A</string>
+				<string>CE58188A1D74828D006D3D43</string>
+				<string>7F9F77441D64E09500B9114B</string>
+				<string>CE68A5B71D89E39E00CC0E4E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Controllers</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7F9F773D1D649FA600B9114B</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.json</string>
+			<key>path</key>
+			<string>restaurantReviews.json</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7F9F773E1D649FA600B9114B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7F9F773D1D649FA600B9114B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7F9F773F1D64A3A500B9114B</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>Restaurant.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7F9F77401D64A3A500B9114B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7F9F773F1D64A3A500B9114B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7F9F77411D64B6AD00B9114B</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>reviews.txt</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7F9F77431D64CB5F00B9114B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7F9F77411D64B6AD00B9114B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7F9F77441D64E09500B9114B</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>RestaurantViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7F9F77451D64E09500B9114B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7F9F77441D64E09500B9114B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7F9F77481D664C8900B9114B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7F6FAE781D6A760A00BE7829</string>
+				<string>7F6FAE761D6A75F700BE7829</string>
+				<string>7F9F774B1D664D4B00B9114B</string>
+				<string>7F9F77491D664D2500B9114B</string>
+				<string>7FA7F8931D60CEA70039792A</string>
+				<string>7FEAA4301D835AB300E4839C</string>
+				<string>7FEAA42E1D8356C100E4839C</string>
+				<string>CE60F2C91D78BEC800F8DBF1</string>
+				<string>CE60F2CA1D78BEC800F8DBF1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Views</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7F9F77491D664D2500B9114B</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>RecommendedRestaurantTableViewCell.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7F9F774A1D664D2500B9114B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7F9F77491D664D2500B9114B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7F9F774B1D664D4B00B9114B</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>RecommendedRestaurantTableViewCell.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7F9F774C1D664D4B00B9114B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7F9F774B1D664D4B00B9114B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7F9F77501D6652D600B9114B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CE1C1B611D79C07D00F1C4D2</string>
+				<string>7F9F77511D6652F200B9114B</string>
+				<string>7F9F77551D6655B100B9114B</string>
+				<string>CE1C1B751D79F48100F1C4D2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Extensions</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7F9F77511D6652F200B9114B</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>UIColorExtension.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7F9F77521D6652F200B9114B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7F9F77511D6652F200B9114B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7F9F77551D6655B100B9114B</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>UIFontExtension.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7F9F77561D6655B100B9114B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7F9F77551D6655B100B9114B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7FA7F8831D60CEA70039792A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7FA7F88E1D60CEA70039792A</string>
+				<string>7FA7F88D1D60CEA70039792A</string>
+				<string>49A1A28CFD61AC8AEF74DEE3</string>
+				<string>D58AA635FF82F295E566095A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7FA7F8841D60CEA70039792A</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastSwiftUpdateCheck</key>
+				<string>0730</string>
+				<key>LastUpgradeCheck</key>
+				<string>0820</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>IBM</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>7FA7F88B1D60CEA70039792A</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.3.1</string>
+						<key>LastSwiftMigration</key>
+						<string>0800</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>7FA7F8871D60CEA70039792A</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>7FA7F8831D60CEA70039792A</string>
+			<key>productRefGroup</key>
+			<string>7FA7F88D1D60CEA70039792A</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>7FA7F88B1D60CEA70039792A</string>
+			</array>
+		</dict>
+		<key>7FA7F8871D60CEA70039792A</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>7FA7F89C1D60CEA70039792A</string>
+				<string>7FA7F89D1D60CEA70039792A</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>7FA7F8881D60CEA70039792A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>CE1C1B6F1D79C5ED00F1C4D2</string>
+				<string>972AB5611DA5E17900985506</string>
+				<string>CE79F37D1D81161800550967</string>
+				<string>CE1C1B621D79C07D00F1C4D2</string>
+				<string>7F9F77401D64A3A500B9114B</string>
+				<string>7F9F77451D64E09500B9114B</string>
+				<string>7F642A7E1D610919007A0F53</string>
+				<string>CE5818831D6BA007006D3D43</string>
+				<string>CE1C1B761D79F48100F1C4D2</string>
+				<string>7F8F98161D61036F0061E220</string>
+				<string>7FEAA42F1D8356C100E4839C</string>
+				<string>7F6FAE9C1D6B5E5800BE7829</string>
+				<string>7F6FAE791D6A760A00BE7829</string>
+				<string>CE60F2CB1D78BEC800F8DBF1</string>
+				<string>CEA4552F1D80691800F531C0</string>
+				<string>7F9F77521D6652F200B9114B</string>
+				<string>CEC1B4C11DABD473004F211A</string>
+				<string>CE5818811D6B7703006D3D43</string>
+				<string>7FA7F8901D60CEA70039792A</string>
+				<string>CED9E2A01D74BCF000AADF4D</string>
+				<string>CE58188B1D74828D006D3D43</string>
+				<string>7F9F774C1D664D4B00B9114B</string>
+				<string>CE1C1B711D79C6C300F1C4D2</string>
+				<string>7F9F77561D6655B100B9114B</string>
+				<string>CE60F2C81D78AC5000F8DBF1</string>
+				<string>CE1456181DAE8CEB00A7E744</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>7FA7F8891D60CEA70039792A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>7ADBC9D51DDD591000837023</string>
+				<string>7ADBC9D61DDD591000837023</string>
+				<string>7ADBC9D71DDD591000837023</string>
+				<string>7ADBC9D81DDD591000837023</string>
+				<string>39A907EB378D2C4DA13F61F7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>7FA7F88A1D60CEA70039792A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>CE68A5BA1D89E57F00CC0E4E</string>
+				<string>CE72A1221DA30C9900D6552E</string>
+				<string>CE79F3831D8304DE00550967</string>
+				<string>972AB5631DA5E6F600985506</string>
+				<string>7F9F77431D64CB5F00B9114B</string>
+				<string>CE1C1B721D79E40F00F1C4D2</string>
+				<string>7F9F773E1D649FA600B9114B</string>
+				<string>7F6FAE9E1D6B5E6800BE7829</string>
+				<string>7FA7F89A1D60CEA70039792A</string>
+				<string>7FA7F8971D60CEA70039792A</string>
+				<string>7FEAA4311D835AB300E4839C</string>
+				<string>7F9F774A1D664D2500B9114B</string>
+				<string>CE72A1241DA30C9E00D6552E</string>
+				<string>CE72A11E1DA2AF7700D6552E</string>
+				<string>CE72A1201DA30C9200D6552E</string>
+				<string>7FA7F8951D60CEA70039792A</string>
+				<string>CE1456191DAE8CEB00A7E744</string>
+				<string>7F4F5BBF1D6E1B4400CF0A13</string>
+				<string>7F6FAE771D6A75F700BE7829</string>
+				<string>CE60F2CC1D78BEC800F8DBF1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>7FA7F88B1D60CEA70039792A</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>7FA7F89E1D60CEA70039792A</string>
+			<key>buildPhases</key>
+			<array>
+				<string>DCF64E1E0842AB98FA211060</string>
+				<string>7FA7F8881D60CEA70039792A</string>
+				<string>7FA7F8891D60CEA70039792A</string>
+				<string>7FA7F88A1D60CEA70039792A</string>
+				<string>AC602C9C2CC8488428B28876</string>
+				<string>AC03295D12905A521ECC3F5F</string>
+				<string>7ADBC9D91DDD591700837023</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>CognitiveConcierge</string>
+			<key>productName</key>
+			<string>WatsonRecommendations</string>
+			<key>productReference</key>
+			<string>7FA7F88C1D60CEA70039792A</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>7FA7F88C1D60CEA70039792A</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>CognitiveConcierge.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>7FA7F88D1D60CEA70039792A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7FA7F88C1D60CEA70039792A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7FA7F88E1D60CEA70039792A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CE1C1B671D79C45A00F1C4D2</string>
+				<string>CE1C1B661D79C30700F1C4D2</string>
+				<string>CED9E29C1D749C5C00AADF4D</string>
+				<string>7F9F773C1D6381F900B9114B</string>
+				<string>CE72A1251DA30CF100D6552E</string>
+				<string>7F9F773B1D6381EE00B9114B</string>
+				<string>7F9F77481D664C8900B9114B</string>
+				<string>7F9F77501D6652D600B9114B</string>
+				<string>7F6FAE7A1D6B4A0A00BE7829</string>
+				<string>7FA7F8961D60CEA70039792A</string>
+				<string>7FA7F8981D60CEA70039792A</string>
+				<string>7FA7F89B1D60CEA70039792A</string>
+				<string>972AB5621DA5E6F600985506</string>
+				<string>7F4F5BBE1D6E1B4400CF0A13</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>CognitiveConcierge</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7FA7F88F1D60CEA70039792A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>AppDelegate.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7FA7F8901D60CEA70039792A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7FA7F88F1D60CEA70039792A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7FA7F8931D60CEA70039792A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7FA7F8941D60CEA70039792A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7FA7F8941D60CEA70039792A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7FA7F8951D60CEA70039792A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7FA7F8931D60CEA70039792A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7FA7F8961D60CEA70039792A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Assets.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7FA7F8971D60CEA70039792A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7FA7F8961D60CEA70039792A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7FA7F8981D60CEA70039792A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7FA7F8991D60CEA70039792A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7FA7F8991D60CEA70039792A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7FA7F89A1D60CEA70039792A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7FA7F8981D60CEA70039792A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7FA7F89B1D60CEA70039792A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7FA7F89C1D60CEA70039792A</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INFINITE_RECURSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_SUSPICIOUS_MOVE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>ENABLE_TESTABILITY</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>SWIFT_VERSION</key>
+				<string>2.3</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>7FA7F89D1D60CEA70039792A</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INFINITE_RECURSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_SUSPICIOUS_MOVE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Owholemodule</string>
+				<key>SWIFT_VERSION</key>
+				<string>2.3</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>7FA7F89E1D60CEA70039792A</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>7FA7F89F1D60CEA70039792A</string>
+				<string>7FA7F8A01D60CEA70039792A</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>7FA7F89F1D60CEA70039792A</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>093B8C3845F89B67402347B1</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
+				<string>$(inherited)</string>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>iPhone Developer</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>DEVELOPMENT_TEAM</key>
+				<string></string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>$(PROJECT_DIR)/Carthage/Build/iOS</string>
+					<string>$(PROJECT_DIR)/Pods/GooglePlaces/Frameworks/**</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>CognitiveConcierge/Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>10.1</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.ibm.CognitiveConcierge</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PROVISIONING_PROFILE</key>
+				<string></string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0.1</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>7FA7F8A01D60CEA70039792A</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>D208A19ADBFAA42F104EF383</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
+				<string>$(inherited)</string>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>iPhone Developer</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>DEVELOPMENT_TEAM</key>
+				<string></string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>$(PROJECT_DIR)/Carthage/Build/iOS</string>
+					<string>$(PROJECT_DIR)/Pods/GooglePlaces/Frameworks</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>CognitiveConcierge/Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>10.1</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.ibm.CognitiveConcierge</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PROVISIONING_PROFILE</key>
+				<string></string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0.1</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>7FEAA42E1D8356C100E4839C</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>WatsonOverlay.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7FEAA42F1D8356C100E4839C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7FEAA42E1D8356C100E4839C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7FEAA4301D835AB300E4839C</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>WatsonOverlay.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7FEAA4311D835AB300E4839C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7FEAA4301D835AB300E4839C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>87BB7C94DAD466B58261E3B8</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods_CognitiveConcierge.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>972AB5601DA5E17900985506</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>BluemixConfiguration.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>972AB5611DA5E17900985506</key>
+		<dict>
+			<key>fileRef</key>
+			<string>972AB5601DA5E17900985506</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>972AB5621DA5E6F600985506</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>name</key>
+			<string>bluemix.plist</string>
+			<key>path</key>
+			<string>Configuration/bluemix.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>972AB5631DA5E6F600985506</key>
+		<dict>
+			<key>fileRef</key>
+			<string>972AB5621DA5E6F600985506</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>AC03295D12905A521ECC3F5F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>[CP] Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-CognitiveConcierge/Pods-CognitiveConcierge-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>AC602C9C2CC8488428B28876</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>[CP] Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-CognitiveConcierge/Pods-CognitiveConcierge-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>CE1456161DAE8CEB00A7E744</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>DecisionsView.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE1456171DAE8CEB00A7E744</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>DecisionsView.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE1456181DAE8CEB00A7E744</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CE1456161DAE8CEB00A7E744</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CE1456191DAE8CEB00A7E744</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CE1456171DAE8CEB00A7E744</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CE1C1B601D79167900F1C4D2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file</string>
+			<key>path</key>
+			<string>SFNSDisplay.ttf</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE1C1B611D79C07D00F1C4D2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>UIViewExtensions.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE1C1B621D79C07D00F1C4D2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CE1C1B611D79C07D00F1C4D2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CE1C1B661D79C30700F1C4D2</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CE5818821D6BA007006D3D43</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Utils</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE1C1B671D79C45A00F1C4D2</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CE1C1B6E1D79C5ED00F1C4D2</string>
+				<string>CEA4552E1D80691800F531C0</string>
+				<string>CE79F37C1D81161800550967</string>
+				<string>CE1C1B701D79C6C300F1C4D2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Navigation</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE1C1B6E1D79C5ED00F1C4D2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>MoreIconBarButtonItem.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE1C1B6F1D79C5ED00F1C4D2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CE1C1B6E1D79C5ED00F1C4D2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CE1C1B701D79C6C300F1C4D2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>ProfileBarButtonItem.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE1C1B711D79C6C300F1C4D2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CE1C1B701D79C6C300F1C4D2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CE1C1B721D79E40F00F1C4D2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CE1C1B601D79167900F1C4D2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CE1C1B751D79F48100F1C4D2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>UILabelExtensions.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE1C1B761D79F48100F1C4D2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CE1C1B751D79F48100F1C4D2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CE5818801D6B7703006D3D43</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>RestaurantDetailViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE5818811D6B7703006D3D43</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CE5818801D6B7703006D3D43</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CE5818821D6BA007006D3D43</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>Utils.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE5818831D6BA007006D3D43</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CE5818821D6BA007006D3D43</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CE58188A1D74828D006D3D43</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>EntertainmentOptionsViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE58188B1D74828D006D3D43</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CE58188A1D74828D006D3D43</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CE60F2C71D78AC5000F8DBF1</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>User.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE60F2C81D78AC5000F8DBF1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CE60F2C71D78AC5000F8DBF1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CE60F2C91D78BEC800F8DBF1</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>EntertainmentCollectionViewCell.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE60F2CA1D78BEC800F8DBF1</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>EntertainmentCollectionViewCell.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE60F2CB1D78BEC800F8DBF1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CE60F2C91D78BEC800F8DBF1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CE60F2CC1D78BEC800F8DBF1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CE60F2CA1D78BEC800F8DBF1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CE68A5B71D89E39E00CC0E4E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CE68A5B81D89E3AA00CC0E4E</string>
+				<string>CE5818801D6B7703006D3D43</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>RestaurantDetailViewController</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE68A5B81D89E3AA00CC0E4E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7F6FAE9D1D6B5E6800BE7829</string>
+				<string>7F6FAE9B1D6B5E5800BE7829</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Subviews</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE68A5B91D89E57F00CC0E4E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file</string>
+			<key>path</key>
+			<string>SFNSDisplay-Bold.ttf</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE68A5BA1D89E57F00CC0E4E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CE68A5B91D89E57F00CC0E4E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CE72A11D1DA2AF7700D6552E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.json</string>
+			<key>path</key>
+			<string>LasVegasReviews.json</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE72A11E1DA2AF7700D6552E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CE72A11D1DA2AF7700D6552E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CE72A11F1DA30C9200D6552E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.json</string>
+			<key>path</key>
+			<string>anniversary.json</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE72A1201DA30C9200D6552E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CE72A11F1DA30C9200D6552E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CE72A1211DA30C9900D6552E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.json</string>
+			<key>path</key>
+			<string>birthday.json</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE72A1221DA30C9900D6552E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CE72A1211DA30C9900D6552E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CE72A1231DA30C9E00D6552E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.json</string>
+			<key>path</key>
+			<string>casual.json</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE72A1241DA30C9E00D6552E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CE72A1231DA30C9E00D6552E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CE72A1251DA30CF100D6552E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CE72A11F1DA30C9200D6552E</string>
+				<string>CE72A1211DA30C9900D6552E</string>
+				<string>CE72A1231DA30C9E00D6552E</string>
+				<string>CE72A11D1DA2AF7700D6552E</string>
+				<string>7F9F773D1D649FA600B9114B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Mock Data</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE79F37C1D81161800550967</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>WhitePathIconBarButtonItem.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE79F37D1D81161800550967</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CE79F37C1D81161800550967</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CE79F3821D8304DE00550967</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.gif</string>
+			<key>name</key>
+			<string>Watson-blue.gif</string>
+			<key>path</key>
+			<string>../Watson-blue.gif</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE79F3831D8304DE00550967</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CE79F3821D8304DE00550967</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CE79F3841D830E0E00550967</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>WatsonOverlay.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CEA4552E1D80691800F531C0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>PathIconBarButtonItem.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CEA4552F1D80691800F531C0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CEA4552E1D80691800F531C0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CEC1B4C01DABD473004F211A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>MessagesViewModel.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CEC1B4C11DABD473004F211A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CEC1B4C01DABD473004F211A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CED91C401DAEB06A0026A4D7</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CED91C411DAEB0950026A4D7</string>
+				<string>CEC1B4C01DABD473004F211A</string>
+				<string>7F8F98151D61036F0061E220</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>MessagesViewController</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CED91C411DAEB0950026A4D7</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CE1456171DAE8CEB00A7E744</string>
+				<string>CE1456161DAE8CEB00A7E744</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Subviews</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CED9E29C1D749C5C00AADF4D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CED9E29F1D74BCF000AADF4D</string>
+				<string>972AB5601DA5E17900985506</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>DataManagers</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CED9E29F1D74BCF000AADF4D</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>EndpointManager.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CED9E2A01D74BCF000AADF4D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CED9E29F1D74BCF000AADF4D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D208A19ADBFAA42F104EF383</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-CognitiveConcierge.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-CognitiveConcierge/Pods-CognitiveConcierge.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D58AA635FF82F295E566095A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7ADBC9D11DDD591000837023</string>
+				<string>7ADBC9D21DDD591000837023</string>
+				<string>7ADBC9D31DDD591000837023</string>
+				<string>7ADBC9D41DDD591000837023</string>
+				<string>87BB7C94DAD466B58261E3B8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DCF64E1E0842AB98FA211060</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>[CP] Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>7FA7F8841D60CEA70039792A</string>
+</dict>
+</plist>
