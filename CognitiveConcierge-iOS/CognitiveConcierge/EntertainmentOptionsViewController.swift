@@ -37,9 +37,9 @@ class EntertainmentOptionsViewController: UIViewController {
     private let kNavigationBarTitle = "Watson Recommendations"
     fileprivate let kCellCount = 3
     private let kLabelText = "WHAT CAN I HELP YOU FIND?"
-    fileprivate let kRestaurantLabelText = "RESTAURANTS"
-    fileprivate let kVacationsLabelText = "VACATIONS"
-    fileprivate let kShowsLabelText = "SHOWS"
+    fileprivate let kRestaurantLabelText = "ACTION"
+    fileprivate let kVacationsLabelText = "ADVENTURE"
+    fileprivate let kShowsLabelText = "ROMANCE"
     private let kConversationErrorCode = -6004
     private let kInternetErrorCode = -10049
 

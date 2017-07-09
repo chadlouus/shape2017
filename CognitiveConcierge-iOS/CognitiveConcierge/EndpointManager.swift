@@ -38,8 +38,11 @@ class EndpointManager: NSObject {
             switch response.result {
             case .success(let theJSON):
                 let jsonResponse = theJSON as! [Any]
-                success(jsonResponse)
-
+                if jsonResponse.count > 0 {
+                    success(jsonResponse)
+                } else {
+                    failure(self.useMockData(fileNameSetting: endpoint))
+                }
             case .failure(let err):
                 print ("using mock data due to err: \(err)")
                 if endpoint == "date" {

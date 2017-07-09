@@ -61,7 +61,7 @@ class MessagesViewController: JSQMessagesViewController {
     private let kSendText: String = "SEND"
     private let kPlaceholderText: String = "Speak or type a request"
     private let kKeepChattingButtonTitle: String = "Keep Chatting"
-    private let kSeeRestaurantsButtonTitle: String = "See Restaurants"
+    private let kSeeRestaurantsButtonTitle: String = "See Movie"
     private let kQuestionLabelText: String = "WHAT WOULD YOU LIKE TO DO?"
     private let kSegueIdentifier: String = "toRestaurants"
     
